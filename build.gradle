@@ -34,6 +34,12 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.8.5'
+	// https://mvnrepository.com/artifact/io.github.openfeign/feign-hc5
+	implementation group: 'io.github.openfeign', name: 'feign-hc5', version: '13.3'
+
+
 }
 
 dependencyManagement {
