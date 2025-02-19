@@ -35,7 +35,7 @@ public interface TarefasClient {
     @PatchMapping
     TarefasDTOResponse alteraStatusNotificacao(@RequestParam("status") StatusNotificacaoEnum status,
                                                @RequestParam("id") String id,
-                                               @RequestHeader("Authorization") String token);
+                                               @RequestHeader(value = "Authorization", required = false)String token);
 
 
     @PutMapping
